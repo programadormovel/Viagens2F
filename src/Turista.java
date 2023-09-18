@@ -2,12 +2,19 @@ public class Turista {
     // Atributos - Variáveis de instância
     private String nome;
     private String cpf;
+
     //Construtor Padrão
     Turista(){}
-    // Construtor personalizado
+    // Sobrecarga do Construtor personalizado
     Turista(String _nome){
         this.nome = _nome;
     }
+    // Mais uma sobrecarga do construtor
+    Turista(String _nome, String _cpf) {
+        this.nome = _nome;
+        this.cpf = _cpf;
+    }
+
     // Métodos
     public String viajar(){
         return "Viajou!!!";
